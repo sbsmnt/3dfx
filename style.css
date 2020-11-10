@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	perspective: 750px;
+}
+
+.container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	transform-style: preserve-3d;
+	min-height: 80vh;
+	width: 32rem;
+	border-radius: 30px;
+	padding: 4rem 3rem;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+.print {
+	min-height: 35vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.print img {
+	max-width: 22rem;
+	z-index: 3;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+	transition: all 0.5s ease;
+}
+
+.circle {
+	width: 24rem;
+	height: 24rem;
+	background: linear-gradient(
+		140deg,
+		rgba(255, 178, 45, 0.65) 0%,
+		rgba(255, 78, 25, 0.65) 100%
+	);
+	position: absolute;
+	border-radius: 100%;
+	z-index: 2;
+	transition: all 0.5s ease;
+}
+
+.info {
+  margin-top: 2rem;
+	text-align: center;
+}
+
+.info h1 {
+	font-size: 3rem;
+	transition: all 0.5s ease;
+}
+
+.info h3 {
+	font-size: 1.3rem;
+	padding: 2rem 0rem;
+	color: #585858;
+	font-weight: 200;
+	transition: all 0.5s ease;
+}
+
+.sizes {
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.5s ease;
+}
+
+.sizes button {
+	padding: 1rem 2rem;
+	background: none;
+	border: none;
+	border-radius: 30px;
+	cursor: pointer;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	font-weight: 600;
+	color: #58585858;
+	transition: all 0.5s ease;
+}
+
+.sizes button:hover {
+	background: #58585858;
+	color: #fff;
+}
+
+.purchase {
+	margin-top: 4rem;
+}
+
+.purchase button {
+	width: 100%;
+	padding: 1rem 0rem;
+	background-color: rgba(255, 78, 25, 0.75);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 600;
+	cursor: pointer;
+	border: none;
+	border-radius: 30px;
+	transition: all 0.5s ease;
+}
+
+.purchase button:hover {
+	color: #585858;
+	background: linear-gradient(
+		140deg,
+		rgba(255, 178, 45, 0.75) 0%,
+		rgba(255, 78, 25, 0.75) 100%
+	);
+}
